@@ -1,0 +1,14 @@
+{
+  "name": "glebec-v/web-server",
+  "description": "simple web-server",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gleb Vorotilov",
+      "email": "gvorotilov@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {"GlebecV\\": "src/"}
+  }
+}

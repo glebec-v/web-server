@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+
+include 'vendor/autoload.php';
+
+$server = new \GlebecV\Server('127.0.0.1', 8000);
+$server->listen(function (\GlebecV\Request $request) {
+    return new \GlebecV\Response('Hello ' . $request->param('name') . ' ' . $request->param('state'));
+});
